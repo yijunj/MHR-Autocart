@@ -11,7 +11,7 @@ Also, to address the resource problem, thanks to [Ken_set](https://www.gamersky.
 1. Save the game
 2. Make 10 melding batches (5 in each batch), do NOT save
 3. Cart in Rajang quest 10 times, do NOT save in the end
-4. Check the 50 talismans, if no good talisman comes out, do NOT save, close the game and go to step 5
+4. Check the 50 talismans, if no good talisman comes out, do NOT save, close the game
 5. Restart the game, make 1 melding (only 1 in this batch) The 150 pts worth of materials is what you WILL pay in this iteration
 6. Cart in Rajang quest once, then take the single talisman
 7. If not a good talisman, go to step 1 and repeat
