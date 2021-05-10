@@ -50,12 +50,14 @@ I use 6 chars for each command: the first 2 indicating which key is pressed or r
 | du | Release Up |
 | DD | Press Down |
 | dd | Release Down |
-| DL | Press Left |
-| dl | Release Left |
 | DR | Press Right |
 | dr | Release Right |
+| DL | Press Left |
+| dl | Release Left |
 | RI | Press R |
 | ri | Release R |
+| LE | Press L |
+| le | Release L |
 | ZR | Press ZR |
 | zr | Release ZR |
 | ZL | Press ZL |
