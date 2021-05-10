@@ -76,11 +76,11 @@ I use 6 chars for each command: the first 2 indicating which key is pressed or r
 | lc | Release Left Stick |
 | RU | Push Right Stick Up |
 | RD | Push Right Stick Down |
-| RL | Push Right Stick Left |
 | RR | Push Right Stick Right |
+| RL | Push Right Stick Left |
 | RN | Return Right Stick Neutral |
 | LU | Push Left Stick Up |
 | LD | Push Left Stick Down |
-| LL | Push Left Stick Left |
 | LR | Push Left Stick Right |
+| LL | Push Left Stick Left |
 | LN | Return Left Stick Neutral |
