@@ -21,7 +21,19 @@ Step 6 will refresh the talisman table so you end up with different talismans in
 ## Arduino controller
 Please refer to [HackerLoop's repo](https://github.com/HackerLoop/Arduino-JoyCon-Library-for-Nintendo-Switch) to learn how to turn an Arduino Leonardo into a Switch joycon. In short, the Arduino, when connected to a Switch via USB, can trigger joycon events. One can either store a button sequence in the Arduino itself, or send commands to the Arduino from a PC via serial port. Here I use the latter: my PC sends a string to the Arduino consisting of several 6-char commands, the Arduino translates the commands into joycon events. I don't need feedback from the Switch.
 
-## Serial commands
+## How to use
+1. Do what is said in [HackerLoop's repo](https://github.com/HackerLoop/Arduino-JoyCon-Library-for-Nintendo-Switch) to modify the Arduino files, then write joycon.ino to an Arduino Leonardo.
+2. Connect the Arduino to PC using a serial-to-USB adapter (USB to computer, RX/TX to the Arduino corresponding pins).
+3. Use a Pro controller, open Monster Hunter Rise. Make sure auto-save is off and pressing "-" opens up the map but not the chat screen. Save the game.
+4. Manually go to the Hub merchant and make 10 melding batches. Then turn off the Pro controller.
+5. The Switch will start looking for a joycon. Connect the Arduino to Switch via a USB cable. Run register.py from PC command window. This will register the Arduino as a "USB controller".
+6. Run autocart.py from PC command window. Your hunter will automatically cart 10 times. This takes 20 minutes.
+7. Unplug the Arduino from Switch. The Switch will once again start looking for a joycon. Register your Pro controller to it.
+8. Manually go to check your talisman. If not happy with the outcome, close the game and restart.
+9. Manually make one melding and cart once, then save the game when you are back.
+10. Save the game. Then go to step 4 and repeat from there.
+
+## Appendix: serial command table
 I use 6 chars for each command: the first 2 indicating which key is pressed or released, and the last 4 indicating the time delay (in ms) after this event. E.g. AA0050 means "press A and wait 50 ms".
 
 | 2-char key code | Action |
