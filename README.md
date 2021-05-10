@@ -23,7 +23,7 @@ Please refer to [HackerLoop's repo](https://github.com/HackerLoop/Arduino-JoyCon
 
 ## How to use
 1. Do what is said in [HackerLoop's repo](https://github.com/HackerLoop/Arduino-JoyCon-Library-for-Nintendo-Switch) to modify the Arduino files, then write joycon.ino to an Arduino Leonardo.
-2. Connect the Arduino to PC using a serial-to-USB adapter (USB to computer, RX/TX to the Arduino corresponding pins).
+2. Connect the Arduino to PC using a serial-to-USB adapter (USB to computer, RX/TX to the Arduino corresponding pins). Check the serial port (for Windows you can go to device manager and look there). It can be different from what I have so you may want to modify autocart.py.
 3. Using a Pro controller, open Monster Hunter Rise. Make sure auto-save is off and pressing "-" opens up the map but not the chat screen. Save the game.
 4. Manually go to the Hub merchant and make 10 melding batches. Then turn off the Pro controller.
 5. The Switch will start looking for a joycon. Connect the Arduino to Switch via a USB cable. Run register.py from PC command window. This will register the Arduino as a "USB controller".
