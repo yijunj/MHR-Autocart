@@ -20,3 +20,53 @@ Step 6 will refresh the talisman table so you end up with different talismans in
 
 ## Arduino controller
 Please refer to [HackerLoop's repo](https://github.com/HackerLoop/Arduino-JoyCon-Library-for-Nintendo-Switch) to learn how to turn an Arduino Leonardo into a Switch joycon. In short, the Arduino, when connected to a Switch via USB, can trigger joycon events. One can either store a button sequence in the Arduino itself, or send commands to the Arduino from a PC via serial port. Here I use the latter: my PC sends a string to the Arduino consisting of several 6-char commands, the Arduino translates the commands into joycon events. I don't need feedback from the Switch.
+
+## Serial commands
+I use 6 chars for each command: the first 2 indicating which key is pressed or released, and the last 4 indicating the time delay (in ms) after this event. E.g. AA0050 means "press A and wait 50 ms".
+
+| 2-char key code | Action |
+| ---------- | ---------- |
+| AA | Press A |
+| aa | Release A |
+| BB | Press B |
+| bb | Release B |
+| XX | Press X |
+| xx | Release X |
+| YY | Press Y |
+| yy | Release Y |
+| DU | Press Up |
+| du | Release Up |
+| DD | Press Down |
+| dd | Release Down |
+| DL | Press Left |
+| dl | Release Left |
+| DR | Press Right |
+| dr | Release Right |
+| RI | Press R |
+| ri | Release R |
+| ZR | Press ZR |
+| zr | Release ZR |
+| ZL | Press ZL |
+| zl | Release ZL |
+| PL | Press Plus |
+| pl | Release Plus |
+| MI | Press Minus |
+| mi | Release Minus |
+| HO | Press Home |
+| ho | Release Home |
+| CA | Press Capture |
+| ca | Release Capture |
+| RC | Press Right Stick |
+| rc | Release Right Stick |
+| LC | Press Left Stick |
+| lc | Release Left Stick |
+| RU | Push Right Stick Up |
+| RD | Push Right Stick Down |
+| RL | Push Right Stick Left |
+| RR | Push Right Stick Right |
+| RN | Return Right Stick Neutral |
+| LU | Push Left Stick Up |
+| LD | Push Left Stick Down |
+| LL | Push Left Stick Left |
+| LR | Push Left Stick Right |
+| LN | Return Left Stick Neutral |
