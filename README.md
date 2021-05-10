@@ -30,7 +30,7 @@ Please refer to [HackerLoop's repo](https://github.com/HackerLoop/Arduino-JoyCon
 6. Run autocart.py from PC command window. Your hunter will automatically cart 10 times. This takes 20 minutes.
 7. Unplug the Arduino from Switch. The Switch will once again start looking for a joycon. Register your Pro controller to it.
 8. Manually go to check your talisman. If not happy with the outcome, close the game and restart.
-9. Manually make one melding and cart once, then save the game when you are back.
+9. Manually make one melding and cart once, then check and take the sole talisman when you are back.
 10. Save the game. Then go to step 4 and repeat from there.
 
 ## Appendix: serial command table
